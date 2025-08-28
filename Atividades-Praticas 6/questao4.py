@@ -17,6 +17,6 @@ def obter_cotacao_atual(moeda):
     except requests.RequestException as e:
         return f"Erro ao obter a cotação: {e}"
     
-moeda = input("Digite o código da moeda para cotação (EUR, USD, GBP)")
+moeda = input("Digite o código da moeda para cotação (EUR, USD, GBP): ")
 resultado = obter_cotacao_atual(moeda)
 print(resultado)
